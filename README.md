@@ -1,5 +1,7 @@
 # gl-test-framework
 
+This is a test framework for https://jsonplaceholder.typicode.com/ public api 
+
 1.Command line for running tests with default settings:
 ```bash
 > gradlew test
