@@ -33,10 +33,19 @@ dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     compile 'com.google.guava:guava:23.0'
 
-    testCompile 'io.rest-assured:rest-assured:3.3.0'
+//    testCompile 'io.rest-assured:rest-assured:3.3.0'
+// https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured
+    testCompile group: 'com.jayway.restassured', name: 'rest-assured', version: '2.9.0'
 
     // Use TestNG framework, also requires calling test.useTestNG() below
     testCompile 'org.testng:testng:6.10'
+
+    // https://mvnrepository.com/artifact/com.github.javafaker/javafaker
+    compile group: 'com.github.javafaker', name: 'javafaker', version: '0.17.2'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.8'
+
 }
 
 // In this section you declare where to find the dependencies of your project
