@@ -19,15 +19,4 @@ public class BaseTest {
             log.info("Cannot read properties for the environment");
         }
     }
-
-//    {
-//        try {
-//            if (envName != null) {
-//                configReader = new EnvironmentConfigReader(envName);
-//            } else
-//                configReader = new EnvironmentConfigReader("Dev");
-//        } catch (IOException e) {
-//            log.info(String.format("Cannot read properties for '%s' environment", envName));
-//        }
-//    }
 }
