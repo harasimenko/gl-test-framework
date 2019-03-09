@@ -13,4 +13,16 @@ public class EntityPostDTO {
         this.title = title;
         this.body = body;
     }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getBody() {
+        return body;
+    }
 }

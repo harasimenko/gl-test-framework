@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class EnvironmentConfigReader {
-
     private Properties appProps;
 
     public String getAppUrl() {
@@ -16,7 +15,15 @@ public class EnvironmentConfigReader {
         return appProps.getProperty("posts.url");
     }
 
-    public EnvironmentConfigReader(String environment) throws IOException {
+    public EnvironmentConfigReader() throws IOException {
+        String envName = System.getProperty("env");
+        String environment;
+        if (envName != null) {
+            environment = envName;
+        } else {
+            environment = "Dev";
+        }
+
         String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
 
         String appConfigPath;
