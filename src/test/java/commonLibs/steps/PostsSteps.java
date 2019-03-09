@@ -15,6 +15,7 @@ public class PostsSteps extends BaseSteps {
     public EntityPostDTO getNewPostPostDto() {
         String title = faker.book().title();
         String body = faker.book().author();
+        //hardcoded userId because of limitation of public API
         Integer userId = 1;
 
         return new EntityPostDTO(userId, title, body);
